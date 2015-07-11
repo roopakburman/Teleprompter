@@ -68,3 +68,15 @@ function stopVideo() {
   });
   
 }
+
+function toTele(result){
+	var elementValue = result;
+	console.log(elementValue);
+/* 	window.location.href ="index.html"; */
+	window.open("index.html", "_blank");
+	document.getElementById("receptor").innerHTML = document.getElementById("byte_content").innerHTML;
+
+	
+	
+	
+}
