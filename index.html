@@ -7,7 +7,7 @@
 		
 		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
-		<script src="bower_components/Recorderjs/recorder.js"></script>
+		<script src="test/bower_components/Recorderjs/recorder.js"></script>
 		
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
@@ -18,7 +18,18 @@
 			<div class="container" id="speech">
 			
 			<strong>
-			<div id="receptor"></div>
+			<div id="receptor">
+			Web audio concepts and usage<br /><br />
+The Web Audio API involves handling audio operations inside an audio context, and has been designed to allow modular routing. Basic audio operations are performed with audio nodes, which are linked together to form an audio routing graph. Several sources — with different types of channel layout — are supported even within a single context. This modular design provides the flexibility to create complex audio functions with dynamic effects.
+<br /><br />
+Audio nodes are linked via their inputs and outputs, forming a chain that starts with one or more sources, goes through one or more nodes, then ends up at a destination (although you don't have to provide a destination if you, say, just want to visualise some audio data.) A simple, typical workflow for web audio would look something like this:
+<br /><br />
+Create audio context<br />
+Inside the context, create sources — such as, oscillator, stream<br />
+Create effects nodes, such as reverb, biquad filter, panner, compressor<br />
+Choose final destination of audio, for example your system speakers<br />
+Connect the sources up to the effects, and the effects to the destination.<br />
+			</div>
 			</strong><br><br>
 			
 			</div>

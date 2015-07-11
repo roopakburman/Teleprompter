@@ -23,7 +23,7 @@ function record() {
     var mediaStreamSource = context.createMediaStreamSource(localMediaStream);
     rec = new Recorder(mediaStreamSource, {
 /*       workerPath: 'C:/Roopak/Projects/GitHub/web-audio-example-master/bower_components/Recorderjs/recorderWorker.js' */
-      workerPath: '/bower_components/Recorderjs/recorderWorker.js'
+      workerPath: 'bower_components/Recorderjs/recorderWorker.js'
     });
 
     rec.record();
@@ -75,6 +75,18 @@ function toTele(result){
 /* 	window.location.href ="index.html"; */
 	window.open("index.html", "_blank");
 	document.getElementById("receptor").innerHTML = document.getElementById("byte_content").innerHTML;
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+
+function delineate(str)
+{
+theleft = str.indexOf("=") + 1;
+theright = str.lastIndexOf("&");
+return(str.substring(theleft, theright));
+}
+document.write("First Name is " +delineate(text));
 
 	
 	
