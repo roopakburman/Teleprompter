@@ -1,6 +1,6 @@
 body {
  	font-family: Helvetica,Arial,sans-serif;
- 	font-size: 2.4em;
+ 	font-size: 4.4em;
  	line-height: 1.4;
  	background: #000;
  	color: #fff;
@@ -8,14 +8,27 @@ body {
 }
 
 #speech {
- 	position: absolute;
+ 	position: relative;
+    min-height: 250px;
 }
+#speech-content {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+  }
 
-p {
- 	margin: .5em;
+  strong {
+	margin-left: .5em;
+
 }
-
 .slide {
  	text-align: center;
 	 margin: 0;
 }
+  #byte_content {
+    margin: 5px 0;
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  #byte_range { margin-top: 5px; }

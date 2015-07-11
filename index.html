@@ -7,26 +7,35 @@
 		
 		<script type="text/javascript" src="js/scroll.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script src="bower_components/Recorderjs/recorder.js"></script>
 		
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<div class ="row">
-			<div id="speech">
-			<p>
-			<strong>From Basic Forms to Shopping Carts</strong><br><br>
-			Some basic text that can be used here
-			<p>
-			And some more here too.!
+		<div class="col-md-offset-1">
+			<div class="container" id="speech">
+			
+			<strong>From Basic Forms to Shopping Carts 1. Lead by example
+2. Focus on communicating objectives rather than defining roles
+3. Sense of urgency
+4. Celebrate individual contributions
+5. Provide guidelines to reduce uncertainty
+6. Recognize that your emotions affect outcomes
+</strong><br><br>
+			
 			</div>
-		
+		</div>
 		</div>
 		<div class ="row">
-			<div class="playerPanel">
-				<button class="btn btn-sm pull-right" onclick="record()">Record</button>
-				<button class="btn btn-sm pull-right" onclick="stop()">Stop</button>
-			</div>		
+		<div class="col-md-offset-4">
+			<div class="container" id="speech-content">
+				<button class="btn btn-sm btn-danger" onclick="record()">Record</button>
+				<button class="btn btn-sm btn-warning" onclick="stop()">Stop</button>
+
+			</div>
+		</div>
 		</div>
 
 	</body>
